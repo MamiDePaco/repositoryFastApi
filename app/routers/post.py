@@ -103,7 +103,7 @@ async def get_post(db:Session=Depends(get_db),current_user:schemas.tokenData=Dep
     #offset es la cantidad de registros que son obviados
     #------------------------------------------------------------------------------------------
     #posts=db.query(models.Post).all()
-
+    print("solo soy algo que se creo para cambiar el codigo para subir a git")
     return postprueba
 
 @router.post("/{id}",response_model=schemas.PostOut)
